@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #00008f;
+}
+
+body
+{
+    font-size: 36px;
+    font-weight: 100;
+    background: #e5e5e5;
+    text-align: end;
+    padding-top: 15px;
+}
+
+.calc-container
+{
+    max-width: 375px;
+    margin: 0 auto;
+    background: yellow;
+    border-radius: 20px;
+}
+
+.result-container
+{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 25);
+    border-radius: 20px;
+    background: #fff;
+}
+
+input[type="button"]
+{
+    display: grid;
+    width: 64px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background: #cff6ee;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 36px;
+    outline: none;
+    transition: 0.3s;
+    position: relative;
+}
+
+input[type="button"]:hover 
+{
+    background: #e5e5e5;
+}
+
+input[type="button"]:hover.operadores-basicos
+{
+    background: #cff6ee;
+}
+
+.result-container
+{
+    position: relative;
+}
+
+.result-container input[type="text"]
+{
+    min-height: 250px;
+    width: 375px;
+    border: none;
+    outline: none;
+    background: #cff6ee;
+    display: grid;
+    text-align: end;
+    font-size: 36px;
+    font-weight: 100;
+    justify-content: end;
+    align-items: end;
+    padding: 20px 20px 0;
+    border-radius: 20px 20px 0 0;
+}
+
+#igual:hover
+{
+    background: #ff5954;
+}
+
+.teclas-container
+{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    justify-content: center;
+    gap: 38px;
+    margin-top: 38px;
+    padding-bottom: 38px;
+}
+
+input.operadores-basicos
+{
+    background: #e5e5e5;
+}
+
+#igual
+{
+    background: #f10085;
+}
+
+#del
+{
+    font-size: 25px;
+}
